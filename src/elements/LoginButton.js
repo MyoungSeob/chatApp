@@ -13,13 +13,13 @@ const LoginButton = () => {
   const navigation = useNavigation();
   return (
     <KeyboardAvoidingView style={styles.grid} behavior="padding" enabled>
-      <Button
+      {/* <Button
         borderRadius={50}
         activeOpacity={0.8}
         color="#2c2c2c"
         title="로그인 하기"
         onPress={() => alert("hello world")}
-      />
+      /> */}
       <View style={styles.registArea}>
         <Text>아직 회원이 아니신가요?</Text>
         <TouchableOpacity
@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   registArea: {
-    marginTop: 20,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
